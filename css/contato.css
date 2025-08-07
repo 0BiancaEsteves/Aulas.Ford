@@ -1,4 +1,4 @@
-.contatoPagina{
+.contatoPagina {
     display: flex;
     max-width: 900px;
     margin: 30px auto;
@@ -7,42 +7,42 @@
     padding: 0 20px;
 }
 
-.contato-imagem{
+.contato-imagem {
     flex: 1;
     min-width: 0;
 }
 
-.contato-imagem img{
+.contato-imagem img {
     width: 100%;
     height: auto;
 }
 
-.formurarioContainer{
+.formularioContainer {
     max-width: 300px;
     margin: 10px auto;
     padding: 10px;
 }
 
-.formurario{
+.formulario {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.formurario h3{
-    color: #000;
+.formulario h3 {
+    color: black;
     text-align: left;
     margin-bottom: 5px;
     font-size: 1.3rem;
 }
 
-.inputGrupo{
+.inputGrupo {
     position: relative;
 }
 
 .inputGrupo input,
 .inputGrupo select,
-.inputGrupo textarea{
+.inputGrupo textarea {
     width: 100%;
     padding: 7px 15px;
     border: 2px solid #ddd;
@@ -52,16 +52,16 @@
     transition: all 0.3s ease;
 }
 
-.inputGrupo input:focus
-.inputGrupo select:focus
-.inputGrupo textarea:focus{
+.inputGrupo input:focus,
+.inputGrupo select:focus,
+.inputGrupo textarea:focus {
     border-color: #00274C;
     outline: none;
     background-color: #fff;
-    box-shadow: 0 0 2px rgb(0, 39, 76, 0.1);
+    box-shadow: 0 0 0 3px rgb(0, 39, 76, 0.1);
 }
 
-.inputGrupo select{
+.inputGrupo select {
     appearance: none;
     color: #555;
 }
@@ -71,36 +71,37 @@
     min-height: 30px;
 }
 
-.submitBotao{
+.submitBotao {
     background-color: #1351d8;
-    color: #ddd;
+    color: white;
     border: none;
     padding: 12px;
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.submitBotao:hover{
+.submitBotao:hover {
     background-color: #00274C;
     color: white;
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px){
-    .contatoPagina{
+@media (max-width: 768px) {
+
+    .contatoPagina {
         flex-direction: column;
         gap: 20px;
     }
-.formurarioContainer{
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-}
-}
 
+    .formularioContainer{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
